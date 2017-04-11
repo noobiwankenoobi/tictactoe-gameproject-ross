@@ -25,17 +25,16 @@ const onChangePassword = function (event) {
   event.preventDefault()
   console.log('Change password event detected')
   const data = getFormFields(event.target)
-
   api.changePassword(data)
     .then(ui.changePasswordSuccess)
     .catch(ui.changePasswordFailure)
 }
-// SIGN OUT ISNT DONE!
+// SIGN OUT ISNT DONE! add "data" instead of "event"?
 const onSignOut = function (event) {
   event.preventDefault()
   console.log('sign out is running')
-
-  api.signOut()
+  const data = getFormFields(event.target)
+  api.signOut(data)
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
 }

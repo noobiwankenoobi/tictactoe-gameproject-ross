@@ -28,8 +28,8 @@ const changePasswordFailure = (error) => {
 }
 
 const signOutSuccess = () => {
-  console.log('Succesfully Signed Out')
   store.user = null
+  console.log('Succesfully Signed Out')
 }
 
 const signOutFailure = (error) => {
