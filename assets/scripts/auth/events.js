@@ -3,8 +3,9 @@
 const getFormFields = require(`../../../lib/get-form-fields`)
 
 const api = require('./api')
-const ui = require('./ui')
+const ui = require('./ui.js')
 
+// Authentication Events
 const onSignUp = function (event) {
   const data = getFormFields(event.target)
   event.preventDefault()
@@ -34,7 +35,7 @@ const onSignOut = function (event) {
   event.preventDefault()
   console.log('sign out is running')
 
-  api.signOut(data)
+  api.signOut()
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
 }

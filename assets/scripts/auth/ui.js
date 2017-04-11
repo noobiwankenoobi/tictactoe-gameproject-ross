@@ -28,7 +28,7 @@ const changePasswordFailure = (error) => {
 }
 
 const signOutSuccess = () => {
-  console.log()
+  console.log('Succesfully Signed Out')
   store.user = null
 }
 

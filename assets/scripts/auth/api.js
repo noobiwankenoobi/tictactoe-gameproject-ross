@@ -13,7 +13,7 @@ const signUp = (data) => {
 }
 
 const signIn = (data) => {
-  console.log('inside signIn. data is', data)
+  console.log('inside signIn, data is', data)
   return $.ajax({
     url: config.apiOrigin + '/sign-in',
     method: 'POST',
@@ -34,7 +34,7 @@ const changePassword = (data) => {
 }
 
 const signOut = () => {
-  console.log('inside signIn. data is:')
+  console.log('inside signIn, data is:')
   return $.ajax({
     url: config.apiOrigin + '/sign-out' + store.user.id,
     method: 'DELETE',
