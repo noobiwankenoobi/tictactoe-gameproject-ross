@@ -1,5 +1,5 @@
 
-<-- LAYOUT------------->
+<!-- LAYOUT------------->
 
 -Nice and clean white background
 -Heading with title top-middle with margin above
@@ -12,7 +12,7 @@
 -
 
 
-<--GAME ENGINE-------->
+<!--GAME ENGINE-------->
 
 -Make an empty game board with 9 cells
 -On page entry, ask person to either "sign-in" or "sign-up" if they don't have an account
@@ -43,7 +43,7 @@
 
 
 
-<--BONUS/OPTIONAL-------->
+<!--BONUS/OPTIONAL-------->
 
 -Allow user to choose which character they want, automatically assigning other character to Player 2
 -Allow two users to sign in on different devices and each log in and play each other

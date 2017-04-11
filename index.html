@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Example</title>
+      <title>Ross's Game Project</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <!-- Do not add `link` tags unless you know what you are doing -->
@@ -14,29 +14,105 @@
     <body class="container-fluid">
       <h1>Tic Tac Toe</h1>
 
+      <!-- Sign In Forms! -->
+
+      <form id="sign-up">
+              <fieldset>
+                <legend>Sign up!</legend>
+                <input type="text" name="credentials[email]" placeholder="email">
+                <input type="password" name="credentials[password]" placeholder="password">
+                <input type="password" name="credentials[password_confirmation]" placeholder="password_confirmation">
+                <input type="submit" name="submit" value="Sign up!">
+              </fieldset>
+            </form>
+            <br>
+            <form id="sign-in">
+              <fieldset>
+                <legend>Sign in!</legend>
+                <input type="text" name="credentials[email]" placeholder="email">
+                <input type="password" name="credentials[password]" placeholder="password">
+                <input type="submit" name="submit" value="Sign in!">
+              </fieldset>
+            </form>
+            <form id="change-password">
+              <fieldset>
+                <legend>Change Password!</legend>
+                <input type="password" name="passwords[old]" placeholder="old password">
+                <input type="password" name="passwords[new]" placeholder="new password">
+                <input type="submit" name="submit" value="Change password!">
+              </fieldset>
+            </form>
+            <p>Accessing an authenticated API.</p>
+            <br>
+            <form id="sign-out">
+              <fieldset>
+                <legend>Sign Out!</legend>
+                <input type="submit" name="submit" value="Sign Out">
+              </fieldset>
+            </form>
+            <br>
 
 
 
 
 
-<!-- Possible Modal Form for Signin -->>
+<!-- Possible Modal Form for Signin Including the Forms -->
       <!-- Button trigger modal -->
-      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalHorizontal">
-          Launch Horizontal Form
-      </button>
+      <!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalHorizontal">
+          Account/Login
+      </button> -->
 
       <!-- Modal -->
-      <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog"
+      <!-- <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog"
            aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
+                <form id="sign-in">
+                  <fieldset>
+                    <legend>Sign in!</legend>
+                    <input type="text" name="credentials[email]" placeholder="email">
+                    <input type="password" name="credentials[password]" placeholder="password">
+                    <input type="submit" name="submit" value="Sign in!">
+                  </fieldset>
+                </form>
+                <form id="change-password">
+                  <fieldset>
+                    <legend>Change Password!</legend>
+                    <input type="password" name="passwords[old]" placeholder="old password">
+                    <input type="password" name="passwords[new]" placeholder="new password">
+                    <input type="submit" name="submit" value="Change password!">
+                  </fieldset>
+                </form>
+                <p>Accessing an authenticated API.</p>
+                <br>
+                <form id="sign-out">
+                  <fieldset>
+                    <legend>Sign Out!</legend>
+                    <input type="submit" name="submit" value="Sign Out">
+                  </fieldset>
+                </form> -->
                   <!-- Modal Header -->
-                  <div class="modal-header">
-                      <button type="button" class="close"
+                  <!-- <div class="modal-header">
+                    <h1>Sign in if you have an account! Sign up if you don't!<h1>
+                      <button type="button" class="close" -->
 
 
+<!-- Possible Modal Forms Empty -->
 
+<!-- <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModalHorizontal">
+    Account/Login
+</button>
 
+<!- Modal -->
+<!-- <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content"> -->
+
+          <!-- Modal Header -->
+          <!-- <div class="modal-header">
+            <h1>Sign in if you have an account! Sign up if you don't!<h1>
+              <button type="button" class="close" --> -->
 
 
 
