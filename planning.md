@@ -40,6 +40,10 @@
 -When game ends, giver user option to "Start New Game" (button)
 -
 
+<!-- GAME API -->
+
+-Request a new game/board (empty array with 9 spots)
+-After each move, update the game board
 
 
 
