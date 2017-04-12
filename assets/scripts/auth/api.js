@@ -8,18 +8,19 @@ const signUp = (data) => {
   return $.ajax({
     url: config.apiOrigin + '/sign-up/',
     method: 'POST',
-    data
+    data: data
   })
 }
 
 const signIn = (data) => {
-  console.log('inside signIn, data is', data)
   return $.ajax({
     url: config.apiOrigin + '/sign-in/',
     method: 'POST',
-    data
+    data: data
   })
 }
+
+// console.log('inside signIn, data is', data)
 
 const signOut = () => {
   console.log('inside signIn, data is:')

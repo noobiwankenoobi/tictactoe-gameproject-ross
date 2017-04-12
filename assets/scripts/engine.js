@@ -30,3 +30,4 @@ const winningRows = {
   condition7: [gameBoard[0],gameBoard[4],gameBoard[8]],
   condition8: [gameBoard[6],gameBoard[4],gameBoard[2]]
 }
+// should this be an array with 8 arrays inside it

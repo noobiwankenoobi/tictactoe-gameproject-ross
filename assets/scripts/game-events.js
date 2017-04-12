@@ -16,10 +16,10 @@ const onGameOver = function
 
 const onGetGames = function
 
-const gameEventHandlers = () => {
+const addHandlers = () => {
   $('#game-cell').on('click', onUpdateGameBoard)
 }
 
 module.exports = {
-  gameEventHandlers
+  addHandlers
 }
