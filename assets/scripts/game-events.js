@@ -1,8 +1,8 @@
 'use strict'
 
 const getFormFields = require(`../../lib/get-form-fields`)
-const ui = require('./game-ui.js')
-const api = require('./game-api.js')
+const game-ui = require('./game-ui.js')
+const game-api = require('./game-api.js')
 
 const onUpdateGameBoard = function (event) {
   event.preventDefault()
