@@ -1,14 +1,15 @@
 'use strict'
 
-const getFormFields = require(`../../lib/get-form-fields`)
+const getFormFields = require('../../../../lib/get-form-fields.js')
 const gameUi = require('./gameUi.js')
 const gameApi = require('./gameApi.js')
 
 const onNewGame = function (event) {
   event.preventDefault()
-  gameApi.newGame()
-    .then()
-    .then()
+    .then(gameApi.newGame)
+    .then(gameUi.clearGameBoard)
+    .then(gameUi.readyToPlay)
+    // initiate whose turn it is
 }
 
 // const onUpdateGameBoard = function (event) {
@@ -20,7 +21,7 @@ const onNewGame = function (event) {
 // }
 
 const addHandlers = () => {
-  $('#start-new-game-button').on('click', onNewGame)
+  $('#start-new-game-button').on('click', onNewGame);
 }
 
   // $('#game-cell').on('click', onUpdateGameBoard)

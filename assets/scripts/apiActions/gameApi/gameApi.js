@@ -1,7 +1,7 @@
 'use strict'
 
-const config = require('./config')
-const store = require('./store')
+const config = require('../../config')
+const store = require('../../store')
 
 
 // how to tell API to create new game
@@ -13,7 +13,7 @@ const newGame = () => {
     url: config.apiOrigin + '/games/',
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
+    }
   })
 }
 
@@ -26,7 +26,7 @@ const getGames = () => {
     url: config.apiOrigin + '/games[?over=]/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
+    }
   })
 }
 
@@ -42,7 +42,7 @@ const getGame = () => {
   })
 }
 
-// PATCH	`/games/:id`
+// PATCH	/games/:id
 // 'empty' body
 const joinGame = () => {
   return $.ajax({
@@ -50,7 +50,7 @@ const joinGame = () => {
     url: config.apiOrigin + '/games/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
+    }
   })
 }
 

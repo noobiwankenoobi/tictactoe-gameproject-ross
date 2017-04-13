@@ -7,37 +7,39 @@ const updateView = require()
 const moveSucess = require()
 
 
-onNewGame =
+// gameEvents are triggering these
+const clearGameBoard = function () {
 
-const moveSuccess = function(){
-  if(gameModel.newGame.id !== null && gameTemplate.newGame.id !== undefined){
-    gameMoves.refreshCounts();
-    gameMoves.refreshGameInfoTable(gameTemplate.newGame);
-  }
-};
+}
 
-const hideBoard = function(){
-  $('.gameboard-table').hide();
+const readyToPlay = function () {
 
-};
+}
 
+const hideGameBoard = function () {
+  $('.gameboard-table').hide()
+}
 
-const updateView = function(){
-  gameMoves.refreshCounts();
-  gameMoves.refreshGameInfoTable(gameTemplate.newGame);
-  gameMoves.redrawBoard();
-  gameTemplate.gameOver = gameChecks.checkGame(gameTemplate.newGame);
-  gameTemplate.newGame.over = gameChecks.checkGame(gameTemplate.newGame);
-  gameMoves.updatePlayerTurnAnnouncement();
+// const moveSuccess = function() {
+//   if(gameModel.newGame.id !== null && gameTemplate.newGame.id !== undefined){
+//     gameMoves.refreshCounts();
+//     gameMoves.refreshGameInfoTable(gameTemplate.newGame);
+//   }
+// };
+
+// const updateView = function(){
+//   gameMoves.refreshCounts();
+//   gameMoves.refreshGameInfoTable(gameTemplate.newGame);
+//   gameMoves.redrawBoard();
+//   gameTemplate.gameOver = gameChecks.checkGame(gameTemplate.newGame);
+//   gameTemplate.newGame.over = gameChecks.checkGame(gameTemplate.newGame);
+//   gameMoves.updatePlayerTurnAnnouncement();
 
   // show modal if game over
- if(gameTemplate.gameOver === true){
-   $('#game-update-modal').text(gameTemplate.winnerString);
-   $('#gameUpdateModal').modal('show');
- }
-
-};
-
+if (gameTemplate.gameOver === true) {
+  $('#game-update-modal').text(gameTemplate.winnerString)
+  $('#gameUpdateModal').modal('show')
+}
 
 // const updateGames = function(data){
 //
@@ -82,6 +84,8 @@ const updateView = function(){
 
 
 
-module.exports {
-
+module.exports = {
+  clearGameBoard,
+  readyToPlay,
+  hideGameBoard
 }
