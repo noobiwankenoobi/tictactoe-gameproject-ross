@@ -6,56 +6,57 @@ const store = require('./store')
 
 // how to tell API to create new game
 // POST	/games	games#create
-const newGame = (data) => {
+// body 'n/a'
+const newGame = () => {
   return $.ajax({
     method: 'POST',
     url: config.apiOrigin + '/games/',
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data: data
   })
 }
 
 // hot to tell API to get all the "over" games associated with user
 // GET	/games/	games#show
-const getGames = (data) => {
+// body n/a
+const getGames = () => {
   return $.ajax({
     method: 'GET',
     url: config.apiOrigin + '/games[?over=]/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data: data
   })
 }
 
 // games#index
-const getGame = (data) => {
+// body 'n/a'
+const getGame = () => {
   return $.ajax({
     method: 'GET',
     url: config.apiOrigin + '/games/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data: data
   })
 }
 
-const joinGame = (data) => {
+// PATCH	`/games/:id`
+// 'empty' body
+const joinGame = () => {
   return $.ajax({
     method: 'PATCH',
     url: config.apiOrigin + '/games/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
     },
-    data: data
   })
 }
 
 // how you update the game board
 // PATCH	/games/:id	games#update
-// body = game delta
+// body = 'game delta'
 const updateGame = (data) => {
   return $.ajax({
     method: 'PATCH',

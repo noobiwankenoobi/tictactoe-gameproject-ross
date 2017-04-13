@@ -1,8 +1,18 @@
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 
+body {
+  background-color: grey;
+}
 
 
+div .game-cell {
+  border: black 2px;
+  height: 100px;
+  margin: 5px;
+  width: 100px;
+
+}
 
 
 
