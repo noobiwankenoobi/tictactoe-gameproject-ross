@@ -22,9 +22,7 @@ const onUpdateGameBoard = function (event) {
     .catch(ui.updateGameBoardFailure)
 }
 
-// const onGameOver = function
-//
-// const onGetGames = function
+
 
 const addHandlers = () => {
   $('#game-cell').on('click', onUpdateGameBoard)
