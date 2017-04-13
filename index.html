@@ -15,7 +15,8 @@
       <h1>Tic Tac Toe</h1>
 
       <!-- Sign In Forms! -->
-      <form id="sign-up">
+        <div class="auth-section-forms">
+            <form id="sign-up">
               <fieldset>
                 <legend>Sign up!</legend>
                 <input type="text" name="credentials[email]" placeholder="email">
@@ -49,6 +50,7 @@
                 <input type="submit" name="submit" value="Sign Out">
               </fieldset>
             </form>
+          </div>
             <!-- possibly add "get player stats" to this area -->
             <br>
 
@@ -57,9 +59,9 @@
         <button type="button" class="btn btn-primary">Start New Game</button>
 
         <div class="container">
-          <div class= "table gameboard-table" id=game-board>
+          <div class= "table gameboard-table" id="game-board">
 
-              <div data-id="0" class= "game-cell col-xs-4" id="cell-1"></div>
+              <div data-id="0" class= "game-cell col-xs-4" id="cell-0"></div>
               <div data-id="1" class= "game-cell col-xs-4" id="cell-1"></div>
               <div data-id="2" class= "game-cell col-xs-4" id="cell-2"></div>
 

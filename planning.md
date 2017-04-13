@@ -20,8 +20,8 @@
 -Randomize whether user or player 2 goes first at the beginning of each game
 -Show below the board whose turn it (highlight around their name maybe)
 
--Have each cell be a clickable button
--Have clicking a button enter either "X" or "O" depending on whose turn it is
+-Have each cell be clickable, sparking an event
+-Have clicking a button enter either "X" or "O" depending on whose turn it is, change turn after click
 -Each cell on the board has an index number, ranging 0-8, left to right, top to bottom
 -Each cell can only have 3 states: 1 (for X placements), -1 (for O placements), or undefined (empty)
 -Each time a cell is clicked and a value/character entered, it can no longer be clicked (clicking does nothing)

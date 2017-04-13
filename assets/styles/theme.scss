@@ -1,0 +1,23 @@
+
+.game-cell {
+  border: 1px solid black;
+  display: inline table-cell;
+  font-weight: bold;
+  height: 0;
+  opacity: 0%;
+  padding-bottom: 33.3333%;
+  text-align: center;
+  vertical-align: middle;
+
+  // &:hover {
+  //   background: tint($board-hover-blue, 75%);
+  //   opacity: 20%;
+  // }
+}
+
+
+// .auth-section-forms {
+//   position: fixed;
+//   float: right;
+//   margin: 10px
+// }
