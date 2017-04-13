@@ -71,14 +71,11 @@ const updateGame = (data) => {
 // GET	/games/:id/watch	games#watch  ??
 
 
-GET	/games	 games#index
-POST	/games	 games#create
-GET	/games/:id	 games#show
-PATCH	/games/:id	 games#update
-GET	/games/:id/watch	 games#watch
-
-
-
+// GET	/games	 games#index
+// POST	/games	 games#create
+// GET	/games/:id	 games#show
+// PATCH	/games/:id	 games#update
+// GET	/games/:id/watch	 games#watch
 
 module.exports = {
   newGame,

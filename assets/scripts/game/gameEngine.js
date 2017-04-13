@@ -9,7 +9,7 @@ const ui = require('../gameAPI/game-ui.js')
 
 const = startGame
 
-const = newGame
+const = startNewGame
 
 const = changeTurn
 
