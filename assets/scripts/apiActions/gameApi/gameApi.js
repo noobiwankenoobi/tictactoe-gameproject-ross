@@ -38,7 +38,7 @@ const getGame = () => {
     url: config.apiOrigin + '/games/:' + store.game.id,
     headers: {
       Authorization: 'Token token=' + store.user.token
-    },
+    }
   })
 }
 
