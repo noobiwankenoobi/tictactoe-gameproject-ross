@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Ross's Game Project</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags unless you know what you are doing -->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags unless you know what you are doing -->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body class="container-fluid">
+      <h1>Tic Tac Toe</h1>
+
+      <!-- Sign In Forms! -->
+        <div class="auth-section-forms">
+            <form id="sign-up">
+              <fieldset>
+                <legend>Sign up!</legend>
+                <input type="text" name="credentials[email]" placeholder="email">
+                <input type="password" name="credentials[password]" placeholder="password">
+                <input type="password" name="credentials[password_confirmation]" placeholder="password_confirmation">
+                <input type="submit" name="submit" value="Sign up!">
+              </fieldset>
+            </form>
+            <br>
+            <form id="sign-in">
+              <fieldset>
+                <legend>Sign in!</legend>
+                <input type="text" name="credentials[email]" placeholder="email">
+                <input type="password" name="credentials[password]" placeholder="password">
+                <input type="submit" name="submit" value="Sign in!">
+              </fieldset>
+            </form>
+            <form id="change-password">
+              <fieldset>
+                <legend>Change Password!</legend>
+                <input type="password" name="passwords[old]" placeholder="old password">
+                <input type="password" name="passwords[new]" placeholder="new password">
+                <input type="submit" name="submit" value="Change password!">
+              </fieldset>
+            </form>
+            <p>Accessing an authenticated API.</p>
+            <br>
+            <form id="sign-out">
+              <fieldset>
+                <legend>Sign Out!</legend>
+                <input type="submit" name="submit" value="Sign Out">
+              </fieldset>
+            </form>
+          </div>
+            <!-- possibly add "get player stats" to this area -->
+            <br>
+
+
+<!-- Game Board -->
+        <button type="button" class="btn btn-primary" id="start-new-game-button">Start New Game</button>
+        <br>
+        <br>
+
+        <div class="container">
+          <div class= "table gameboard-table" id="game-board">
+
+              <div data-id="0" class= "game-cell col-xs-4" id="cell-0"></div>
+              <div data-id="1" class= "game-cell col-xs-4" id="cell-1"></div>
+              <div data-id="2" class= "game-cell col-xs-4" id="cell-2"></div>
+
+              <div data-id="3" class= "game-cell col-xs-4" id="cell-3"></div>
+              <div data-id="4" class= "game-cell col-xs-4" id="cell-4"></div>
+              <div data-id="5" class= "game-cell col-xs-4" id="cell-5"></div>
+
+              <div data-id="6" class= "game-cell col-xs-4" id="cell-6"></div>
+              <div data-id="7" class= "game-cell col-xs-4" id="cell-7"></div>
+              <div data-id="8" class= "game-cell col-xs-4" id="cell-8"></div>
+
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary">Get Stats</button>
+          <button type="button" class="btn btn-primary">Get Games</button>
+          <button type="button" class="btn btn-primary">Get Game</button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
