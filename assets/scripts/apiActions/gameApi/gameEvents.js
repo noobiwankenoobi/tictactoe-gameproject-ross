@@ -6,7 +6,7 @@ const gameApi = require('./gameApi.js')
 
 const onNewGame = function (event) {
   event.preventDefault()
-    .then(gameApi.newGame)
+    gameApi.newGame()
     .then(gameUi.clearGameBoard)
     .then(gameUi.readyToPlay)
     // initiate whose turn it is

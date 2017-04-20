@@ -20,5 +20,5 @@ const = checkForWinner
 
 const gameBoard = ['','','','','','','','']
 
-
+const
 // should this be an array with 8 arrays inside it
