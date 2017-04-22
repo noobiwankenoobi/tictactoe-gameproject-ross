@@ -41,7 +41,7 @@ const getGame = () => {
     }
   })
 }
-
+a
 // PATCH	/games/:id
 // 'empty' body
 const joinGame = () => {
