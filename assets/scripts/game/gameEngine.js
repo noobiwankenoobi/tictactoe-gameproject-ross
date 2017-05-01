@@ -1,5 +1,8 @@
 'use strict'
 
+const api = require('../game/gameAPI.js')
+const ui = require('../game/gameUI.js')
+
 const isFree = (idNum, arr) => {
   if (arr[idNum] === '') {
     return true
@@ -107,9 +110,6 @@ const whoWon = function (arr) {
     return
   }
 }
-
-const api = require('../gameAPI/api.js')
-const ui = require('../gameAPI/ui.js')
 
 const updateGame = function (index, value, gameOver) {
   api.updateGame(index, value, gameOver)

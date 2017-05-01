@@ -1,9 +1,9 @@
 'use strict'
 
-const api = require('./api')
-const board = require('../board/events.js')
-const ui = require('./ui')
-const getFormFields = require(`../../../lib/get-form-fields`)
+const api = require('./gameAPI')
+const board = require('./gameEngine.js')
+const ui = require('./gameUI')
+const getFormFields = require('../../../lib/get-form-fields')
 
 const onCreateGame = function () {
   event.preventDefault()

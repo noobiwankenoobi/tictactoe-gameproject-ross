@@ -13,13 +13,12 @@ $(() => {
 // use require without a reference to ensure a file is bundled
 require('./example')
 
-const authEvents = require('./apiActions/userAuth/events.js')
-const gameEvents = require('./apiActions/gameApi/gameEvents.js')
+const authEvents = require('./userAuth/events.js')
+const gameEvents = require('./game/gameActions.js')
 // const gameEvents = require('./game-events.js')
 
 // On document ready
 $(() => {
   authEvents.addHandlers()
   gameEvents.addHandlers()
-  // gameEvents.addHandlers()
 })
