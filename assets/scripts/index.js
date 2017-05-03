@@ -13,6 +13,9 @@ $(() => {
 // use require without a reference to ensure a file is bundled
 require('./example')
 
+$('.signed-in-view').hide()
+$('.not-signed-in').show()
+
 const authEvents = require('./userAuth/events.js')
 const gameEvents = require('./game/gameActions.js')
 // const gameEvents = require('./game-events.js')

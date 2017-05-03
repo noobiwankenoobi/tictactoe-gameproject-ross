@@ -1,15 +1,15 @@
 'use strict'
 
 const api = require('./gameAPI')
-const board = require('./gameEngine.js')
+const gameEngine = require('./gameEngine.js')
 const ui = require('./gameUI')
 const getFormFields = require('../../../lib/get-form-fields')
 
 const onCreateGame = function () {
   event.preventDefault()
   api.createNew()
-    .then(board.newGameSuccess)
-    .catch(board.newGameFailure)
+    .then(gameEngine.newGameSuccess)
+    .catch(gameEngine.newGameFailure)
 }
 
 const onGetAllGames = function () {
@@ -27,12 +27,26 @@ const onGetOneGame = function (event) {
     .catch(ui.oneGameFailure)
 }
 
-const addGameHandlers = () => {
+const onGameCellClick = function (event) {
+  const cell = event.target
+  const gameOver = gameEngine.gameOver
+  if ($(cell).text() === '' && gameOver === false) {
+    $(cell).text(gameEngine.turn)
+    if (gameEngine.turn === 'x') {
+      gameEngine.turn = 'o'
+    } else {
+      gameEngine.turn = 'x'
+    }
+  }
+}
+
+const addHandlers = () => {
   $('#create-game').on('submit', onCreateGame)
   $('#get-all-games').on('submit', onGetAllGames)
   $('#get-one-game').on('submit', onGetOneGame)
+  $('.game-cell').on('click', onGameCellClick)
 }
 
 module.exports = {
-  addGameHandlers
+  addHandlers
 }

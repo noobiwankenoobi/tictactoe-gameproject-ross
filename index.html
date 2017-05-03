@@ -19,16 +19,16 @@
             <nav class="navbar navbar-fixed-top navbar-transparent navbar-right" id="top-nav-bar">
 
               <span class="navbar-brand">
-                <a href=".">Tic Tac Toe</a>
+                <!-- <a href=".">Tic Tac Toe</a> -->
               </span>
 
-              <span class="modal-button-container not-signed-in">
+              <!-- <span class="modal-button-container not-signed-in">
                 <input type="submit" class="modal-button btn btn-default" data-toggle="modal" data-target="#signUpModal" value="Sign Up!">
               </span>
 
               <span class="modal-button-container not-signed-in">
                 <input type="submit" class="modal-button btn btn-default" data-toggle="modal" data-target="#signInModal" value="Sign In!">
-              </span>
+              </span> -->
 
               <span>
                 <input id="new-game" class="btn btn-default signed-in-view" type="submit" name="submit" value="Start New Game!">
@@ -62,20 +62,20 @@
                 <input id="show-token-modal" class="modal-button btn btn-default signed-in-view" type="submit" name="submit" value="Auth Token">
               </span>
 
-              <span class="modal-button-container signed-in-view">
+              <!-- <span class="modal-button-container signed-in-view">
                 <input type="submit" class="modal-button btn btn-default" data-toggle="modal" data-target="#changePWModal" value="Change Password">
               </span>
 
               <span>
                 <input id="sign-out" class="modal-button btn btn-default signed-in-view" type="submit" name="submit" value="Sign out!">
-              </span>
+              </span> -->
 
             </nav>
 
             <br><br><br><br>
 
             <div>
-              <h1 id="page-title" class="not-signed-in">Tic Tac Toe</h1>
+              <!-- <h1 id="page-title" class="not-signed-in">Tic Tac Toe</h1> -->
             </div>
 
             <div class="container">
@@ -89,7 +89,7 @@
 
       <!-- Sign In Forms! -->
         <div class="auth-section-forms">
-            <form id="sign-up">
+            <form id="sign-up" class="not-signed-in">
               <fieldset>
                 <legend>Sign up!</legend>
                 <input type="text" name="credentials[email]" placeholder="email">
@@ -99,7 +99,7 @@
               </fieldset>
             </form>
             <br>
-            <form id="sign-in">
+            <form id="sign-in" class="not-signed-in">
               <fieldset>
                 <legend>Sign in!</legend>
                 <input type="text" name="credentials[email]" placeholder="email">
@@ -107,7 +107,7 @@
                 <input type="submit" name="submit" value="Sign in!">
               </fieldset>
             </form>
-            <form id="change-password">
+            <form id="change-password" class="signed-in-view">
               <fieldset>
                 <legend>Change Password!</legend>
                 <input type="password" name="passwords[old]" placeholder="old password">
@@ -117,7 +117,7 @@
             </form>
             <p>Accessing an authenticated API.</p>
             <br>
-            <form id="sign-out">
+            <form id="sign-out" class="signed-in-view">
               <fieldset>
                 <legend>Sign Out!</legend>
                 <input type="submit" name="submit" value="Sign Out">
@@ -129,11 +129,11 @@
 
 
 <!-- Game Board -->
-        <button type="button" class="btn btn-primary" id="start-new-game-button">Start New Game</button>
+        <button type="button" class="btn btn-primary signed-in-view" id="start-new-game-button">Start New Game</button>
         <br>
         <br>
 
-        <div class="container">
+        <div class="container signed-in-view">
           <div class= "table gameboard-table" id="game-board">
 
               <div data-id="0" class= "game-cell col-xs-4" id="cell-0"></div>
@@ -151,7 +151,7 @@
           </div>
         </div>
 
-        <div class="btn-group">
+        <div class="btn-group signed-in-view">
           <button type="button" class="btn btn-primary">Get Stats</button>
           <button type="button" class="btn btn-primary">Get Games</button>
           <button type="button" class="btn btn-primary">Get Game</button>
